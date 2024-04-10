@@ -1,0 +1,62 @@
+[
+    {
+      "isChecked": false,
+      "brandIcon": "https://w7.pngwing.com/pngs/213/847/png-transparent-computer-icons-shopify-e-commerce-irepair-shop-logo.png",
+      "brandName": "Shopify",
+      "chatIcon": "icon_Path",
+      "noOfChat": 4,
+      "description": "Description",
+      "members": [
+        ""
+      ],
+      "catergory": "Automation",
+      "catergory_color": "green",
+      "tags": "Tags",
+      "nextMeeting": "Tomorrow"
+    },
+    {
+      "isChecked": false,
+      "brandIcon": "https://w7.pngwing.com/pngs/827/526/png-transparent-microsoft-windows-microsoft-outlook-microsoft-office-microsoft-logo-s-text-rectangle-triangle-thumbnail.png",
+      "brandName": "Microsoft",
+      "chatIcon": "icon_Path",
+      "noOfChat": 2,
+      "description": "Description",
+      "members": [
+        ""
+      ],
+      "catergory": "Automation",
+      "catergory_color": "yellow",
+      "tags": "Tags",
+      "nextMeeting": "In 1 hour"
+    },
+    {
+      "isChecked": false,
+      "brandIcon": "https://w1.pngwing.com/pngs/138/644/png-transparent-paypal-logo-text-line-blue.png",
+      "brandName": "Paypal",
+      "chatIcon": "icon_Path",
+      "noOfChat": 7,
+      "description": "Description",
+      "members": [
+        ""
+      ],
+      "catergory": "Automation",
+      "catergory_color": "voilet",
+      "tags": "Tags",
+      "nextMeeting": "In 30 minutes"
+    },
+    {
+      "isChecked": false,
+      "brandIcon": "https://w7.pngwing.com/pngs/249/19/png-transparent-google-logo-g-suite-google-guava-google-plus-company-text-logo.png",
+      "brandName": "Google",
+      "chatIcon": "icon_Path",
+      "noOfChat": 5,
+      "description": "Description",
+      "members": [
+        ""
+      ],
+      "catergory": "Automation",
+      "catergory_color": "red",
+      "tags": "Tags",
+      "nextMeeting": "No contact"
+    }
+  ]

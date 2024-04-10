@@ -1,0 +1,375 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="styles.css">
+  <script src="script.js"></script>
+</head>
+
+<body>
+  <form class="open-list" action="#" onsubmit="return validation()">
+    <div class="side-bar">
+      <div class="logo">
+        <div><img src="k logo.png" width="50px"></div>
+        <div class="company">
+          <h3 class="kr">K RITE INNOVATION</h3>
+        </div>
+        <!-- On clicking profile icon,file will open -->
+        <div class="prof"><img src="prof icon.png" width="35px">
+          <input type="file" accept=".pdf" style="cursor:pointer;">
+        </div>
+      </div>
+      <div class="team">
+        <div><img src="design.png" width="20px"></div>
+        <h3>Design Team</h3>
+        <div class="team-count"><img src="brand.png" width="17px">+ 1</div>
+      </div>
+
+      <div class="team2">
+        <div><img src="marketing.png" width="25px"></div>
+        <h3>Marketing Team</h3>
+        <div class="team-count"><img src="brand.png" width="17px">+ 2</div>
+      </div>
+
+      <div class="team3">
+        <div><img src="development.png" width="25px"></div>
+        <h3>Development Team</h3>
+        <div class="team-count"><img src="brand.png" width="17px">+ 3</div>
+      </div>
+      <div class="team-create">
+        <div><img src="create team .png" width="25px"></div>
+        <h3 style="color: rgb(115, 113, 111);">Create a team</h3>
+      </div>
+
+      <div class="folders">
+        <h3>FOLDERS</h3>
+        <div><img src="add icon.png" width="25px"></div>
+      </div>
+      <!-- On clicking products file dropdown icon,list will open and after clicking dropup icon of below file ,list will close -->
+      <div class="f1">
+        <img src="file.png" width="20px">
+        <h3>Products</h3>
+        <img src="drop down.png" onclick="openHam()" width="15px" style="padding-left:132px;">
+      </div>
+      <div class="f2">
+        <img src="file.png" width="20px">
+        <h3>Sales</h3>
+        <img src="drop down.png" onclick="openHam()" width="15px" style="padding-left:163px;">
+      </div>
+      <div class="f3">
+        <img src="file.png" width="20px">
+        <h3>Design</h3>
+        <img src="drop down.png" onclick="openHam()" width="15px" style="padding-left:149px;">
+      </div>
+      <div class="f4">
+        <img src="file.png" width="20px">
+        <h3>Office</h3>
+      </div>
+      <div class="f5">
+        <img src="file.png" width="20px">
+        <h3>Legal</h3>
+      </div>
+
+      <!-- new-file under(Products,Sales & Design) -->
+
+      <div id="open" class="f6" style="display:none;">
+        <div class="p-list">
+          <h3>Roadmap</h3><img src="drop-up.png" onclick="closeHam()" width="15px" style="padding-left:143px;">
+        </div>
+        <div class="p-list">
+          <h3>Feedback</h3>
+        </div>
+        <div class="p-list">
+          <h3>Performance</h3>
+        </div>
+        <div class="p-list">
+          <h3>Team</h3>
+        </div>
+        <div class="p-list">
+          <h3>Analytics</h3>
+        </div>
+        <div class="p-list"><img src="create team .png" width="25px">
+          <h3 style="padding-left: 10px;">Add new sub</h3>
+        </div>
+
+      </div>
+    </div>
+
+    <div class="invite">
+      <div><img src="invite team.png" width="25px"></div>
+      <h3>Invite teammates</h3>
+    </div>
+
+    <div class="help">
+      <div><img src="help.png" width="25px"></div>
+      <h3>Create a team</h3>
+      <div class="team-count"><img src="brand.png" width="17px">+ 2</div>
+    </div>
+    <!-- On clicking Add billing button ,file will open -->
+    <div class="day-left">
+      <div class="day-box"><b style="padding:6px 6px;">7</b></div>
+      <h3>days left on trial</h3>
+      <button>Add billing</button>
+      <input type="file" accept=".pdf">
+    </div>
+
+    </div>
+  </form>
+
+  <div class="main-bar">
+    <!-- <input type="text" id="myInput" onkeyup="myFunction()" placeholder="Search for names.." title="Type in a name"> -->
+    <div>
+      <h1 class="product">Products</h1>
+    </div>
+    <div class="search-container">
+      <form action="" class="search-bar">
+        <img src="search-b.png" width="26px">
+        <input type="text" id="myInput" placeholder="Search for..." onkeyup="myFunction()" name="search">
+        <div class="chat"><img src="chat .png" width="30px"></div>
+        <!-- On clicking setting icon hamburger list will open and after clicking on cancel icon list will close -->
+        <div class="setting"><img src="setting icon.png" onclick="openSlide()" width="30px"></div>
+      </form>
+    </div>
+
+    <div class="head">
+      <div class="brand">
+        <div><img src="brand.png" width="20px"></div>
+        <div class="heading">
+          <h2>All brands</h2>
+        </div>
+        <div class="drop"><img src="drop down.png" width="20px"></div>
+      </div>
+
+      <div class="desk">
+        <div class="heading">
+          <h2>Desk</h2>
+        </div>
+        <div class="drop"><img src="drop down.png" width="20px"></div>
+      </div>
+
+      <div class="tags">
+        <div class="heading">
+          <h2>Tags</h2>
+        </div>
+        <div class="drop"><img src="drop down.png" width="20px"></div>
+      </div>
+
+      <div class="sort">
+        <div><img src="sort.png" width="20px" height="18"></div>
+        <div class="heading">
+          <h2 style="color: rgb(115, 113, 111);">Sort</h2>
+        </div>
+      </div>
+
+      <div class="filter">
+        <div><img src="filter.png" width="25px"></div>
+        <div class="heading">
+          <h2 style="color: rgb(115, 113, 111);">Filter</h2>
+        </div>
+      </div>
+
+      <div class="meeting">
+        <div><img src="meeting.png" width="24px"></div>
+        <div class="heading">
+          <h2>meeting</h2>
+        </div>
+      </div>
+
+      <div class="import">
+        <div><img src="import,export.png" width="26px"></div>
+        <div class="heading">
+          <h2>Import/Export</h2>
+        </div>
+      </div>
+
+    </div>
+
+    <div class="head-type">
+      <div class="add-box">
+        <input class="add-box-cbox" type="checkbox" style="width:17px;" />
+        <h4 style="color: rgb(115, 113, 111);">Brand</h4>
+        <div><img src="add icon.png" width="25px"></div>
+      </div>
+      <div class="box" >Description</div>
+      <div class="box" >Members</div>
+      <div class="box" >Categories</div>
+      <div class="box" >Tags</div>
+      <div class="box" >Next Meeting</div>
+      <div class="add"><img src="add icon.png" width="25px"></div>
+    </div>
+    
+    <ul id="mybrands">
+
+      <div class="head-type-a">
+        <div class="add-box-a">
+          <input class="add-box-a-cbox" type="checkbox" style="width:17px;">
+          <div class="b-icon-a"><img src="shopify.png" width="25px"></div>
+          <li style="list-style-type: none;">
+            <h4 class="brand-name"><a style="text-decoration: none; color: black;" href="#">Shopify</a></h4>
+          </li>
+          <img src="chat .png" width="25px">
+          <p style="padding-left:178px;">2</p>
+        </div>
+        <div class="box-a">Description</div>
+        <div class="box-a"><img src="prof icon.png" width="30px" style="margin-top:-10px;"><img src="prof icon.png"
+            width="30px" style="margin-top:-10px;margin-left:-15px;"><img src="prof icon.png" width="30px"
+            style="margin-top:-10px;margin-left:-15px;"></div>
+        <div class="box-a">
+          <div
+            style="border:solid 1px rgb(73, 27, 73); background-color: rgb(237, 214, 241); color: rgb(49, 24, 49); width:90px;border-radius:10px; padding-left:5px;">
+            Automation</div>
+        </div>
+        <div class="box-a">Tags</div>
+        <div class="box-a">
+          <div
+            style="border:solid 1px rgb(27, 73, 48); background-color: rgb(207, 246, 212); color: rgb(24, 49, 32); width:80px;border-radius:10px; padding-left:5px;">
+            Tomorrow</div>
+        </div>
+        <div class="add-a"><img src="add icon.png" width="25px"></div>
+      </div>
+
+      <!-- <div class="head-type-b">
+        <div class="add-box-b">
+          <input class="add-box-b-cbox" type="checkbox" style="width:17px;">
+          <div class="b-icon-b"><img src="microsoft.png" width="25px"></div>
+          <li style="list-style-type: none;">
+            <h4 class="brand-name"><a style="text-decoration: none; color: black;" href="#">Microsoft</a></h4>
+          </li>
+          <img src="chat .png" width="25px">
+          <p style="padding-left:178px;">4</p>
+        </div>
+        <div class="box-b">Description</div>
+        <div class="box-b"><img src="prof icon.png" width="30px" style="margin-top:-10px;"><img src="prof icon.png"
+            width="30px" style="margin-top:-10px;margin-left:-15px;"></div>
+        <div class="box-b">
+          <div
+            style="border:solid 1px rgb(182, 145, 43); background-color: rgb(246, 231, 170); color: rgb(143, 99, 5); width:100px;border-radius:10px; padding-left:5px;">
+            E-Commerce</div>
+        </div>
+        <div class="box-b">Tags</div>
+        <div class="box-b">
+          <div
+            style="border:solid 1px rgb(41, 81, 117); background-color: rgb(209, 206, 246); color: rgb(20, 29, 128); width:70px;border-radius:10px; padding-left:5px;">
+            in 1 hour</div>
+        </div>
+        <div class="add-b"><img src="add icon.png" width="25px"></div>
+      </div>
+
+      <div class="head-type-c">
+        <div class="add-box-c">
+          <input class="add-box-c-cbox" type="checkbox" style="width:17px;">
+          <div class="b-icon-c"><img src="google.png" width="25px"></div>
+          <li style="list-style-type: none;">
+            <h4 class="brand-name"><a style="text-decoration: none; color: black;" href="#">google</a></h4>
+          </li>
+          <img src="chat .png" width="25px">
+          <p style="padding-left:178px;">5</p>
+        </div>
+        <div class="box-c">Description</div>
+        <div class="box-c"><img src="prof icon.png" width="30px" style="margin-top:-10px;"><img src="prof icon.png"
+            width="30px" style="margin-top:-10px;margin-left:-15px;"><img src="prof icon.png" width="30px"
+            style="margin-top:-10px;margin-left:-15px;"></div>
+        <div class="box-c">
+          <div
+            style="border:solid 1px rgb(41, 81, 117); background-color: rgb(209, 206, 246); color: rgb(20, 29, 128); width:90px;border-radius:10px; padding-left:5px;">
+            Technology</div>
+        </div>
+        <div class="box-c">Tags</div>
+        <div class="box-c">
+          <div
+            style="border:solid 1px rgb(182, 145, 43); background-color: rgb(246, 231, 170); color: rgb(143, 99, 5); width:102px;border-radius:10px; padding-left:5px;">
+            in 30 minutes</div>
+        </div>
+        <div class="add-c"><img src="add icon.png" width="25px"></div>
+      </div>
+
+      <div class="head-type-d">
+        <div class="add-box-d">
+          <input class="add-box-d-cbox" type="checkbox" style="width:17px;">
+          <div class="b-icon-d"><img src="paypal.png" width="25px"></div>
+          <li style="list-style-type: none;">
+            <h4 class="brand-name"><a style="text-decoration: none; color: black;" href="#">Paypal</a></h4>
+          </li>
+          <img src="chat .png" width="25px">
+          <p style="padding-left:178px;">7</p>
+        </div>
+        <div class="box-d">Description</div>
+        <div class="box-d"><img src="prof icon.png" width="30px" style="margin-top:-10px;"><img src="prof icon.png"
+            width="30px" style="margin-top:-10px;margin-left:-15px;"><img src="prof icon.png" width="30px"
+            style="margin-top:-10px;margin-left:-15px;"><img src="prof icon.png" width="30px"
+            style="margin-top:-10px;margin-left:-15px;"></div>
+        <div class="box-d">
+          <div
+            style="border:solid 1px rgb(71, 206, 129); background-color: rgb(206, 255, 225); color: rgb(38, 108, 71); width:55px;border-radius:10px; padding-left:5px;">
+            SAAS</div>
+        </div>
+        <div class="box-d">Tags</div>
+        <div class="box-d">
+          <div
+            style="border:solid 1px rgb(223, 87, 14); background-color: rgb(245, 193, 160); color: rgb(144, 45, 6); width:85px;border-radius:10px; padding-left:5px;">
+            No contact</div>
+        </div>
+        <div class="add-d"><img src="add icon.png" width="25px"></div>
+      </div> -->
+
+     
+    </ul>
+    <script>
+
+loadDataFromFile()
+    </script>
+    <div class="head-type-e">
+      <div class="add-box-d">
+        <h4 style="padding-left:85px;">4 Count</h4>
+      </div>
+      <div class="box-e">
+        <h4>+ Add calculation</h4>
+      </div>
+      <div class="box-e">
+        <h4>+ Add calculation</h4>
+      </div>
+      <div class="box-e">
+        <h4>+ Add calculation</h4>
+      </div>
+      <div class="box-e">
+        <h4>+ Add calculation</h4>
+      </div>
+      <div class="box-e"></div>
+      <div class="add-e"></div>
+    </div>
+
+    <div class="bottom">
+      <div class="selected">
+        <div style="border:solid 1px black; background-color: black;width:15px;height:17px;border-radius:5px;"><b
+            style="color:white;padding:4px 4px;">3</b></div>
+        <h3 style="padding-left:5px;">selected</h3>
+      </div>
+      <div class="archive">
+        <img src="archive.png" width="15px" style="padding-bottom:3px;padding-right:3px;">
+        <h3>Archive</h3>
+      </div>
+      <div class="delete">
+        <img src="delete.png" width="15px" style="padding-bottom:5px;padding-right:3px;">
+        <h3>Delete</h3>
+      </div>
+      <div class="more">
+        <h3>More</h3>
+        <img src="drop down.png" width="18px">
+      </div>
+      <img src="cancel.png" width="20px" height="20px" style="padding-left:430px; padding-top:11px; cursor: pointer;">
+    </div>
+    <div id="r-slide" class="slide" style="display:none;">
+      <div><img src="cancel.png" onclick="closeSlide()" width="25px" style="padding-left:260px;padding-top:20px;"></div>
+      <h3>Roadmap</h3>
+      <h3>Feedback</h3>
+      <h3>Performance</h3>
+      <h3>Team</h3>
+      <h3>Analytics</3>
+    </div>
+  </div>
+</body>
+
+</html>
